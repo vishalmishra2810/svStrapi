@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_listings",
+  "info": {
+    "singularName": "job-listing",
+    "pluralName": "job-listings",
+    "displayName": "Job Listing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "JobTitle": {
+      "type": "string",
+      "default": "Software Engineer"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "JobDescription": {
+      "type": "text"
+    },
+    "Location": {
+      "type": "string"
+    }
+  }
+}
