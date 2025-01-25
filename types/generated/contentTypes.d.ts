@@ -465,6 +465,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiJobListingJobListing extends Struct.CollectionTypeSchema {
     collectionName: 'job_listings';
     info: {
+        description: '';
         displayName: 'Job Listing';
         pluralName: 'job-listings';
         singularName: 'job-listing';
@@ -476,6 +477,7 @@ export interface ApiJobListingJobListing extends Struct.CollectionTypeSchema {
         CompanyName: Schema.Attribute.String;
         createdAt: Schema.Attribute.DateTime;
         createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> & Schema.Attribute.Private;
+        EmploymentType: Schema.Attribute.String;
         JobDescription: Schema.Attribute.Text;
         JobTitle: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Software Engineer'>;
         locale: Schema.Attribute.String & Schema.Attribute.Private;
